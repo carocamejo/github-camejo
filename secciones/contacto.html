@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <div class="grid-inicio">
+      <header>
+        <div>
+          <img src="../img/logo-recetas.png" alt="Logo" />
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="../index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="/secciones/recetario.html">Recetas</a>
+            </li>
+            <li>
+              <a href="/secciones/menusemanal.html">Menu semanal</a>
+            </li>
+            <li>
+              <a href="/secciones/tips.html">Tips</a>
+            </li>
+            <li>
+              <a href="/secciones/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div>
+          <h1>Formulario de contacto</h1>
+          <div class="contacto-main">
+            <form>
+              <fieldset>
+                <legend>Ingresa tus datos</legend>
+                <div>
+                  <label for="nombre">Nombre y apellido</label>
+                  <input type="text" name="nombre" id="nombre" required />
+                </div>
+
+                <div>
+                  <label for="correo">Correo electronico</label>
+                  <input
+                    type="email"
+                    name="correo"
+                    id="correo-electronico"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="telefono">Telefono</label>
+                  <input type="number" name="telefono" id="telefono" required />
+                </div>
+
+                <div>
+                  <label for="recibir-newsletter"
+                    >Recibir ofertas y noticias a mi casilla de correo
+                  </label>
+                  <input type="checkbox" name="" id="recibir-newsletter" />
+                </div>
+
+                <div>
+                  <label for="desplegable">Motivo de consulta</label>
+                  <select>
+                    <option class="menu-desplegable-contacto" value="">Dudas sobre mi compra</option>
+                    <option class="menu-desplegable-contacto" value="">Reclamo</option>
+                    <option class="menu-desplegable-contacto" value="">Consulta sobre producto</option>
+                    <option class="menu-desplegable-contacto" value="">Error de direccion</option>
+                    <option class="menu-desplegable-contacto" value="">No me llego mi compra</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="mensaje"> Mensaje o consulta </label>
+                </div>
+                <div>
+                  <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="botton-contacto">
+                  <input type="submit" value="Enviar Formulario" />
+
+                  <input type="reset" value="Limpiar Formulario" />
+
+                  <input type="button" value="Button" />
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-div">
+          <p>Contacto</p>
+          <p>Tel:092522533</p>
+          <p>recetario@gmail.com</p>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img
+              class="img-footer"
+              src="/img/facebook.png"
+              alt="Icono Facebook"
+            />
+          </a>
+          <p>Imagenes Uso gratuito bajo la Licencia Unsplash</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
