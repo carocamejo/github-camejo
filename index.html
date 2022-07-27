@@ -10,31 +10,9 @@
 <body>
 <div class="grid-inicio">
   <header>
-        <!--<div>
-            <img src="img/logo-recetas.png" alt="Logo">
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="secciones/recetario.html">Recetas</a>
-                </li>
-                <li>
-                    <a href="secciones/menusemanal.html">Menu semanal</a>
-                </li>
-                <li>
-                    <a href="secciones/tips.html">Tips</a>
-                </li>
-                <li>
-                    <a href="secciones/contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"> <img src="img/logo-recetas.png" alt=""></a>
+              <a class="navbar-brand" href="index.html"> <img src="img/logo-recetas.png" alt="logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -44,27 +22,30 @@
                     <a class="nav-link active" aria-current="page" href="secciones/recetario.html">Recetario</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="secciones/contacto.html">Contacto</a>
+                    <a class="nav-link active" aria-current="page" href="secciones/menusemanal.html">Menu semanal</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="secciones/menusemanal.html">Menu semanal</a>
+                    <a class="nav-link active" aria-current="page" href="secciones/tips.html">Tips</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="secciones/tips.html">Tips</a>
+                    <a class="nav-link active" aria-current="page" href="secciones/contacto.html">Contacto</a>
                   </li>
                 </ul>
               </div>
             </div>
-          </nav>
+        </nav>
   </header>
   <main>
         <div>
             <h1>Recetas para todos los días</h1>
-            <p class="container">En nuestra web encontrarás todo tipo de recetas, los mejores tips de cocina y varios consejos para organizarte a la hora de armar tu menu semanal . Contamos con cocineros experimentados en todos los ámbitos de la cocina que trabajan para ofrecerte las mejores recetas caseras, fáciles y rápidas de hacer. Entrantes, increíbles aperitivos, todo tipo de ensaladas, pastas, sopas, arroces, carnes, pescados, repostería... Recetas para tos los días sorprende con una gran variedad de recetas de cocina fáciles a la vez que gustosas, que te dejarán sin palabras.</p>   
+        </div>
+        <section class="container">
+        <div>
+            <p>En nuestra web encontrarás todo tipo de recetas, los mejores tips de cocina y varios consejos para organizarte a la hora de armar tu menu semanal . Contamos con cocineros experimentados en todos los ámbitos de la cocina que trabajan para ofrecerte las mejores recetas caseras, fáciles y rápidas de hacer. Entrantes, increíbles aperitivos, todo tipo de ensaladas, pastas, sopas, arroces, carnes, pescados, repostería... Recetas para tos los días sorprende con una gran variedad de recetas de cocina fáciles a la vez que gustosas, que te dejarán sin palabras.</p>   
             <p>A continuacion te mostramos fotografias del ultimo Backstage Invierno 2022</p>
             <p>Backstage</p>
         </div>
-        <div class="foto-inicio">
+        <!--<div class="foto-inicio">
             <img src="img/cocineros.jpg" alt="cocineros">
             <img src="img/cortandoperejil.jpg" alt="preparacion">
             <img src="img/carnebalanza.jpg" alt="carnepreparacion">
@@ -74,7 +55,38 @@
             <img src="img/servir.jpg" alt="servir">
             <img src="img/noquisdezapallo.jpg" alt="ñouisdezapallo">
             <img src="img/tablet.jpg" alt="tablet">
-        </div>
+        </div>-->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/cortandoperejil.jpg" class="d-block w-100" alt="cortandoperejil">
+              </div>
+              <div class="carousel-item">
+                <img  src="img/cocineros.jpg" class="d-block w-100" alt="cocineros">
+              </div>
+              <div class="carousel-item">
+                <img  src="img/condimentos.jpg" class="d-block w-100" alt="condimento">
+              </div>
+              <div class="carousel-item">
+                <img src="img/carnebalanza.jpg" class="d-block w-100" alt="carne">
+              </div>
+              <div class="carousel-item">
+                <img src="img/preparacionalimentos.jpg" class="d-block w-100" alt="preparacion">
+              </div>
+              <div class="carousel-item">
+                <img src="img/tablet.jpg" class="d-block w-100" alt="tablet">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
   </main>
   <aside>
         <div>
