@@ -20,14 +20,15 @@ h1 {
     display: grid;
     grid-template-columns: 1fr;
 }
+/*
 header {
     display: flex;
     justify-content: space-around;
-    
-}
+}*/
 header div img {
-    width: 400px;
+    width: 250px;
 }
+/*
 header nav {
     display: flex;
     justify-content: space-between;
@@ -45,9 +46,9 @@ header nav ul li a {
     color: #9d248e;
     font-size: large;
     text-align: center;
-}
+}*/
 main {
-    background-image: url(fondo-inicio.png);
+    background-image: url(../img/fondo-inicio.png);
     padding-bottom: 10%;
 }
 main div p {
@@ -130,26 +131,14 @@ footer div {
  .texto-receta {
     margin: 30px;
  }
- .tip-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 4em 2em;
-    flex-wrap: wrap;
- }
  .tip { 
     background-color: white;
     border: 4px solid #414ca0;
-    width: 550px;
-    margin: 30px;
     line-height: 200%;
     color: #414ca0;
  }
- .tip-receta img {
-    width: 250spx;
- }
  .tip-texto {
-    margin: 30px;
+    margin: 15px;
  }
  .menu-flex div {
     display: flex;
@@ -167,8 +156,6 @@ footer div {
  .menu-texto p {
     text-align: center;
     background-color: white;
-    margin: 20px 60px;
-    width: 600px;
     line-height: 150%;
  }
  .contacto-main {
@@ -216,22 +203,23 @@ input {
     .grid-inicio {
         display: inline;
     }
+    /*
     header {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-    }
+    }*/
     header div img {
         width: 200px;
         display: inline;
-    }
+    }/*
     header nav ul { 
         gap: 1rem;
         flex-direction: column;
         flex-wrap: wrap;
-    }
+    }*/
     main p{
         width: max-content 768px;
     }
@@ -266,22 +254,23 @@ input {
     .grid-inicio {
         display: inline;
     }
+    /*
     header {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-    }
+    }*/
     header div img {
-        width: 300px;
+        width: 150px;
         display: inline;
-    }
+    }/*
     header nav ul { 
         gap: 1rem;
         flex-direction: column;
         flex-wrap: wrap;
-    }
+    }*/
     main p{
         width: max-content 480px;
     }
