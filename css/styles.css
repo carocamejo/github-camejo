@@ -20,55 +20,52 @@ h1 {
     display: grid;
     grid-template-columns: 1fr;
 }
+.fondo {
+    background-color: white;
+}
 header div img {
     width: 250px;
 }
 header nav ul { 
     background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 5rem;
 }
 header nav ul li a {
     text-decoration: none;
-    color: #9d248e;
     font-size: large;
     text-align: center;
 }
 main {
     background-image: url(../img/fondo-inicio.png);
-    padding-bottom: 10%;
 }
 main div p {
     text-align: center;
     padding: 40px;
 }
-aside {
-    display: grid;
-    background-color: #ffde59;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    align-content: space-between;
-}
 aside div {
     background-color: #ffde59;
-    color: white;
     text-align: center;
-    font-size: medium;
     padding: 20px;
 }
-aside div img {
-    width: 350px;
-    margin: 20px;
+.imagen-aside {
+    background-color: #ffde59;
     animation-duration: 2s;
     animation-name: aparecer;
+    max-height: 220px;
+}
+.row {
+    margin-right: 0;
 }
 aside div a {
-    font-size: large;
+    font-size: x-large;
     text-decoration: none;
     color: white;
-    padding: 5px;
+    display: block;
+    
+}
+aside div img {
+    margin: 20px auto;
+    animation-duration: 2s;
+    animation-name: aparecer;
 }
 footer div {
     padding: 10px;
@@ -102,10 +99,9 @@ footer div {
  .receta h3 {
     color:#9d248e;
  }
- /*
  .imagen-receta img {
-    width: 250spx;
- }*/
+    width: 300px;
+ }
  .texto-receta {
     margin: 30px;
  }
@@ -117,10 +113,10 @@ footer div {
  }
  .tip-texto {
     margin: 15px;
- }/*
- .tip-imagen {
-    width: 200px;
- }*/
+ }
+ .tip-imagen img {
+    width: 300px;
+ }
  .contacto-main {
     padding: 30px 100px ;
     display: flex;
@@ -157,9 +153,6 @@ input {
     color: white;
     padding: 10px;
 }
-img {
-    width: 200px;
-}
 .imagenmenu {
     width: 600px;
 }
@@ -171,6 +164,27 @@ img {
         opacity: 1;
     }
 }
+@media (max-width: 992px) {
+    h1 {
+        font-size: large;
+    }
+    .grid-inicio {
+        display: inline;
+    }
+    header div img {
+        width: 200px;
+        display: inline;
+    }
+    main p{
+        width: max-content 992px;
+    }
+    main div p {
+        padding: 0;
+    }
+    aside div {
+        display: none;
+    } 
+}
 @media (max-width: 768px) {
     h1 {
         font-size: large;
@@ -181,16 +195,13 @@ img {
     header div img {
         width: 200px;
         display: inline;
-    }/*
+    }
     main p{
         width: max-content 768px;
-    }*/
+    }
     main div p {
         padding: 0;
     }
-    aside div {
-        display: none;
-    } 
     img {
         width: 100px;
     }
@@ -208,6 +219,9 @@ img {
     header div img {
         width: 150px;
         display: inline;
+    }
+    header nav ul { 
+        gap: 0rem;
     }
     .imagenmenu {
         width: 200px;
