@@ -156,6 +156,11 @@ input {
 .imagenmenu {
     width: 600px;
 }
+/*
+.navbar-expand-lg .navbar-collapse {
+    justify-content: space-around;
+  }*/
+
 @keyframes aparecer {
     0% { 
         opacity: 0;
