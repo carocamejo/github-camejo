@@ -1,8 +1,11 @@
 {
-  "name": "coder-recetario-camejo",
+  "name": "recetario-camejo",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "dependencies": {
+    "sass": "^1.54.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +18,6 @@
   "bugs": {
     "url": "https://github.com/carocamejo/github-camejo/issues"
   },
-  "homepage": "https://github.com/carocamejo/github-camejo#readme"
+  "homepage": "https://github.com/carocamejo/github-camejo#readme",
+  "description": ""
 }
